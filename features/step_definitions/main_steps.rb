@@ -1,7 +1,7 @@
 
 #TODOS OS CENARIOS
 Dado('que acesso a pagina') do
-  visit '/qa-test' #TODO - INSPECIONAR A PRESENÇA CORRETA
+  visit '/qa-test'
 end
 
 #CENARIO 1 e CENARIO 3
