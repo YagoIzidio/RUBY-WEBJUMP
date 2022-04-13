@@ -1,7 +1,7 @@
 
 #TODOS OS CENARIOS
 Dado('que acesso a pagina') do
-  visit 'https://wj-qa-automation-test.github.io/qa-test/' #TODO - MELHORAR O VISIT PARA MOCAR A URL PRINCIPAL E INSPECIONAR A PRESENÇA CORRETA
+  visit '/qa-test' #TODO - INSPECIONAR A PRESENÇA CORRETA
 end
 
 #CENARIO 1 e CENARIO 3
@@ -21,11 +21,11 @@ end
 
 #CENARIO 1
 Então('verifico a ausência dos mesmos no painel de BUTTONS') do
-  modalButton = find('#panel_body_one')
+  modal_button = find('#panel_body_one')
 
-  expect(modalButton).to_not have_button('One')
-  expect(modalButton).to_not have_button('Two')
-  expect(modalButton).to_not have_button('Four')
+  expect(modal_button).to_not have_button('One')
+  expect(modal_button).to_not have_button('Two')
+  expect(modal_button).to_not have_button('Four')
 end
 
 #CENARIO 2 e CENARIO 4
@@ -89,7 +89,6 @@ end
 #CENARIO 4
 Dado('faço um check na opção OptionThree no painel de IFRAME BUTTONS') do
   within_frame(:xpath, '//*[@id="iframe_panel_body"]/iframe') do
-    sleep 5
     check 'OptionThree'
   end
 end
