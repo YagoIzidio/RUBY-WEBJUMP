@@ -12,15 +12,13 @@
 
 # Sua configuração
 
-- Chrome = Recomendo manter a ultima versão instável - (Clicar em `configurações` , `Sobre o Google Chrome` e verificar a ultima versão disponível)
+- Chrome = Recomendo manter a ultima versão - (Clicar em `configurações` , `Sobre o Google Chrome` e verificar a ultima versão disponível)
 
-- Chromedriver = Não será necessário mexer nessa configuração, uma vez que a `gem` já inserida irá configurar certinho
+- Instalar o Ruby = `brew install ruby` este comando instala a versão mais recente do Ruby, se estiver no windows, baixar o executável de instalação mais recente no site `https://rubyinstaller.org/`
 
-- Instalar o Ruby = `brew install ruby` este comando deve instalar a versão mais recente do Ruby, se estiver no windows, baixar o executável de instalação mais recente no site `https://rubyinstaller.org/`
+- Instalar o bundler = no terminal rode o comando `gem install bundler` 
 
-- Instalar o bundler = `gem install bundler` este comando deve instalar a versão mais recente
-
-- Após a instalação do bundler executar o comando `bundler install` para atualizar e instalar todas as bibliotecas presente no arquivo Gemfile
+- Com o projeto clonado e aberto no VSCode, no terminal execute o comando `bundler install` para atualizar e instalar todas as bibliotecas presentes no arquivo Gemfile do projeto
 
 _ATENÇÃO: No arquivo Gemfile do projeto já está adicionado a `gem` do chromedriver, a mesma gerencia toda a questão dos drivers em tempo de execução, fazendo tudo o que tem que fazer pro driver funcionar._
 
@@ -30,7 +28,4 @@ _ATENÇÃO: No arquivo Gemfile do projeto já está adicionado a `gem` do chrome
 - `cucumber -t @cenario1` para rodar a primeira tarefa do exercicio
 - `cucumber -t @cenario2` para rodar a segunda tarefa do exercicio
 - `cucumber -t @cenario3` para rodar a terceira tarefa do exercicio
-
-**Não ficou claro qual dos campos automatizar na terceira tarefa, com isso fiz um quarto cenário automatizando os IFRAMES**
-
 - `cucumber -t @cenario4` para rodar a quarta tarefa do exercicio
